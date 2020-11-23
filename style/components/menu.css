@@ -1,0 +1,105 @@
+.menu{
+    position: fixed;
+    height: 100vh;
+    width: 75%;
+    background-color: aliceblue;
+    top: 0;
+    z-index: 10;
+    left: -75%;
+    transition: .4s ease-out;
+}
+.menu-backdrop{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.78);
+    top: 0;
+    z-index: 9;
+    display: none;
+}
+.menu-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    
+}
+.menu-list__item{
+	padding: 0 15px;
+	font-size: 20px;
+	text-decoration: none;
+    color:white;
+    display: block;
+    font-weight: bold;
+    border-left: 25px solid #19283f;
+    /* border-right: 15px solid #19283f; */
+    background-color: #4682B4;
+    padding: 0.6em 0 0.6em 0.7em;
+    z-index: 9;
+    border-bottom: 1px solid #cacaca;
+
+}
+
+
+.menu-list__item::after{
+-webkit-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+transform: rotate(180deg);
+-webkit-transform-origin: 50% 50%;
+-o-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+}
+
+
+.menu-list__item:hover {
+    font-weight: bold;/*!!!!не болд!!*/
+	text-decoration: none; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+    color:#f7b014;; /* Цвет ссылки */
+ 
+}
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+.caret {
+    width: 20px;
+    height: 30px;
+    opacity: .6;
+    padding-right: 0;
+    margin-right: 20px;
+    transition: transform .4s ease;
+    justify-content: right;
+    position: absolute;
+    right: 0px;
+
+}
+
+.panel {
+
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+    transition-duration: 3s;
+
+  }
+  .panel-text{
+    border-bottom: 1px solid #cacaca;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: .7rem 2rem;
+    margin-bottom: 0;
+  }
+  .a{
+      text-decoration: none;
+      color: #292e36;
+  }
+  .a:hover{
+      text-decoration: none;
+      color: #292e36;
+      cursor:pointer;
+  }
+
+
+  

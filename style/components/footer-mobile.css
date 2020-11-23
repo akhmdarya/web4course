@@ -1,0 +1,195 @@
+.footer-mobile{
+    display: none;
+}
+.accordion {
+    border-bottom: 1px solid #666 !important;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    /* background-color: #35373a; */
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;  
+}
+
+
+
+
+
+.footer-mobile-inner{
+	width: 100%;
+	background-color:white;
+	
+    overflow-y: auto;
+}
+.footer-mobile-inner-h{
+	color: white;
+	font-weight: 700;
+	margin: 1%;
+	font-size: 20px;
+}
+.ul{
+	margin-left: 10%;
+	padding-top: 5%;
+	padding-right: 3%;
+}
+.footer-mobile-inner-a{
+	text-decoration: none;
+	color: white;
+}
+.footer-mobile-inner-a:hover{
+	text-decoration: none;
+	color: #fff8ea;
+}
+.footer-mobile-inner-title{
+
+	/* background: #f7b014;
+    -webkit-box-shadow: 0.5rem 0 0 #f7b014, -0.5rem 0 0 #f7b014;
+    box-shadow: 0.5rem 0 0 #f7b014, -0.5rem 0 0 #f7b014; */
+    display: inline;
+    padding: .20rem 0;
+    font-weight: 700;
+	line-height: 1.6;
+	/* color: #f7b014;; */
+	/* font-size: 25px; */
+}
+
+.footer-mobile-list__item{
+	align-items: center;
+    position: relative;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: bold;
+    z-index: 9;
+    border-bottom: 2px solid #cacaca;
+}
+
+
+.footer-mobile-list__item::after{
+-webkit-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+transform: rotate(180deg);
+-webkit-transform-origin: 50% 50%;
+-o-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+transition: .3s ease-in-out;
+}
+
+
+.footer-mobile-list__item:hover {
+    font-weight: bold;/*!!!!не болд!!*/
+	text-decoration: none; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+	color:white; /* Цвет ссылки */
+	transition: .3s ease-in-out;
+ 
+}
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+.caret {
+    width: 20px;
+    height: 30px;
+    opacity: .6;
+    padding-right: 0;
+    margin:10px 10px;
+    transition: transform .4s ease;
+    justify-content: right;
+    position: absolute;
+    right: 0px;
+
+}
+
+.panel {
+	background-image: url(../../images/iStock-946745596.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-box-align: center;
+    display: flex;
+    -webkit-box-pack: center;
+    display: -ms-flexbox;
+    background-color: #f9fafa;
+    color: #333;
+
+    display: none;
+    overflow: hidden;
+	transition: .3s ease-in-out;
+
+  }
+  .footer-mobile-panel-text{
+
+	/* color: #a6edf5; */
+	width: 100%;
+	background-color:rgba(42,48,59, .85);
+
+color: whitesmoke;;
+	 
+	border-bottom: 1px solid #59e2f150;
+	font-size: 15px;
+	transition: .3s ease-in-out;
+    font-weight: 500;
+	padding: .7rem .1rem;
+	padding-left: 2.5rem;
+    margin-bottom: 0;
+  }
+  .a{
+      text-decoration: none;
+      color: #292e36 ;
+  }
+  .a:hover{
+      text-decoration: none;
+      color: #292e36 !important;
+	  cursor:pointer;
+	  transition: .3s ease-in-out;
+  }
+  .footer-mobile-list__item-inner-text{
+	  display: flex;
+	  align-items: center;
+
+  }
+.footer-mobile-list__item-text{
+    width: 80%;
+    color: white;
+}
+.footer-mobile-panel-text:hover{
+	color: #59e2f1e7;
+}
+
+
+
+    .footer-mobile-inner::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+        background-color: #F5F5F5;
+        border-radius: 10px; }
+        
+        .footer-mobile-inner::-webkit-scrollbar {
+        width: 12px;
+        background-color: #F5F5F5; }
+        
+        .footer-mobile-inner::-webkit-scrollbar-thumb {
+            border-radius: 0px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+            background-image: -webkit-gradient(linear, left bottom, left top, from(#30cfd0), to(rgba(42,48,59)));
+            background-image: -webkit-linear-gradient(bottom, #93ecfc 0%, rgba(42,48,59) 100%);
+            background-image: linear-gradient(to top, #93ecfc 0%, rgba(42,48,59) 100%); }

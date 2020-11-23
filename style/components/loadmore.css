@@ -1,0 +1,137 @@
+.container{
+    width: 55%;
+    margin: 0 auto;
+    border: 0px solid black;
+    padding: 10px 0px;
+}
+
+/* post */
+.post{
+    width: 97%;
+    min-height: 200px;
+    padding: 5px;
+    border: 1px solid gray;
+    margin-bottom: 15px;
+}
+
+.post h1{
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+
+.post p{
+    letter-spacing: 1px;
+    text-overflow: ellipsis;
+    line-height: 25px;
+}
+
+/* Load more */
+.load-more{
+    width: 99%;
+    background: #15a9ce;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+    font-family: sans-serif;
+}
+
+.load-more:hover{
+    cursor: pointer;
+}
+/* more link */
+.more{
+    color: blue;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+
+.clear{
+    clear:both;
+    margin-top: 20px;
+   }
+   
+   #searchResult{
+    list-style: none;
+    padding: 0px;
+    width: 250px;
+    position: absolute;
+    margin: 0;
+    z-index: 10;
+
+    background-image: url(../../images/iStock-946745596.jpg);
+
+    /* width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    text-align: center;
+    border-bottom: 2px solid #cacaca;
+    text-decoration: none;
+    color: #F5F5F5;
+    font-weight: 600; */
+   }
+   #searchResult :hover{
+
+    min-height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-box-align: center;
+    display: flex;
+    -webkit-box-pack: center;
+    display: -ms-flexbox;
+    background-color: #464646;
+    color:#292e36 !important; 
+    font-weight: 700;
+    text-decoration: none;
+    cursor:pointer;
+    transition: .3s ease-in-out;
+    font-weight: 700;
+   }
+   
+   #searchResult li{
+    background: #03bffe ;
+    padding: 4px;
+    margin-bottom: 1px;
+    color: #dd7f05;
+    font-weight: 400
+
+   }
+   
+   #searchResult li:nth-child(even){
+    background:#03bffe ;
+    color: #dd7f05;
+    font-weight: 400
+   }
+   
+   #searchResult li:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background: rgba(111, 247, 33, 0.568);
+    font-weight: 700;
+   }
+   
+   input[type=text]{
+    padding: 5px;
+    width: 250px;
+    letter-spacing: 1px;
+   }
+
+
+
+   .search{
+
+
+
+}
+
+.search:hover{
+
+}

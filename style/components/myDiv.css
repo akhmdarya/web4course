@@ -1,0 +1,25 @@
+ .myDiv{
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #5f7962; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%;
+} 
+.myDiv-inner{
+    padding: 15px 3% 0; 
+    font-weight: 700;
+    min-height: 65px;
+    position: relative;
+    width: 100%;
+    top: 0; 
+    flex-wrap: wrap;
+}
+.myDiv-inner-sides{
+    display: flex;
+    align-content: center;
+     align-items: center;
+    justify-content:space-between; 
+    flex-wrap: wrap;
+}
+

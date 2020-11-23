@@ -1,0 +1,134 @@
+.header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    transition: margin-top .5s;
+    width: 100%;
+    z-index: 6;
+    background-color: #35373a;
+    flex-wrap: wrap;
+}
+
+.header-inner {
+    padding: 15px 3% 0; 
+    font-weight: 700;
+    min-height: 65px;
+    position: relative;
+    width: 100%;
+    top: 0; 
+    flex-wrap: wrap;
+
+
+
+}
+
+.head-inner-sides{
+    display: flex;
+    align-content: center;
+     align-items: center;
+    justify-content:space-between; 
+    flex-wrap: wrap;
+    
+}
+.header-inner-sides-right{
+    display: flex;
+    justify-content: flex-start;
+}
+.header-inner-sides-center{
+    display: flex;
+    justify-content: center;
+  
+}
+.header-inner-sides-left{
+    display: flex;
+    justify-content: flex-end;
+ 
+}
+
+.head-inner-menu{
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 20px;
+    padding: 0;
+}
+.head-inner-menu-item{
+display: block;
+    white-space: nowrap;
+    text-decoration: none;
+    margin: 5px 5px;
+}
+.head-inner-menu-item-link{
+    align-items: center;
+    color: #fff;
+    display: -ms-flexbox;
+    padding: 0 25px;
+    position: relative;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+    cursor: pointer;
+
+}
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+.head-inner-menu-item-link :hover{
+color: #03bffe;
+border: none;
+text-decoration: none;
+font-weight: 700;
+cursor: pointer;
+}
+.head-inner-menu-item-text{
+    color: #fff;
+    font-family: ProximaNova,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+/* .head-inner-menu-item::after{
+
+border-bottom: 5px solid #03bffe;
+bottom: 0;
+content: '';
+display: inline-block;
+left: 0;
+position: absolute;
+right: 0;
+} */
+
+.header-icon {
+    
+	width: 110px;
+	height: 35px;
+ /*display: none;*/
+   
+   
+}
+.head-inner-sides-right-container{
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    position: relative;
+}
+.right-container-item{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+
+.button{
+    color: #03bffe;
+}
+.header-icon-mobile {
+	width: 30px;
+	height: 30px;
+    display: none;
+    justify-content: right;
+   
+}

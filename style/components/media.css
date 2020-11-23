@@ -1,0 +1,25 @@
+@media screen and (max-width: 960px) {
+    .header-icon {
+        display: block;
+        margin: 0 170%;
+        width: 90px;
+        height: 27px;
+    }
+    .head-inner-sides-center,.head-inner-sides-right-container{
+        display: none;
+    }
+    .header-icon-mobile{
+        display: block;
+        margin: -30px 6%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-inner {
+        display: none ;
+        
+    }
+    .footer-mobile{
+        display: flex !important;
+    }
+}

@@ -1,0 +1,71 @@
+.main {
+    height: 100vh;
+    background: url(../../images/gopro-hero8-black.jpg) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
+    background-position: 100% 100%;
+    min-height: 100%;
+    background-position: center center;
+
+    background-size: cover;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-container {
+    margin: 4%;
+    text-align: center;
+    position: absolute;
+    top:  15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.main-container-title-h {
+    font-family: ProximaNova,Helvetica,Arial,sans-serif;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    
+    /* justify-content: center; */
+
+}
+
+.main-container-title {
+    display: inline;
+    padding: .20rem 0;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.main-container-subtitle {
+    font-family: ProximaNova,Helvetica,Arial,sans-serif;
+    display: inline;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1;
+}
+.button1{
+    border-radius: 100px !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    border-width: 3px !important;
+   
+}

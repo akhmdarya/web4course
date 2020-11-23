@@ -1,0 +1,105 @@
+
+
+body{
+	background:#f1f9f9;
+}
+
+.form-signin {
+    min-width: 500px;
+    padding: 19px 29px 29px;
+    margin: 0 auto;
+	margin-top:90px;
+    background-color: #fff;
+	
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+       -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
+			
+	font-family:Tahoma, Geneva, sans-serif;
+	color:#990000;
+	font-weight:lighter;
+}
+#register-form{
+    min-width: 900px!important;
+}
+
+.form-signin .form-signin-heading{
+    color:#00A2D1;
+}
+.form-signin input[type="text"],
+.form-signin input[type="password"],
+.form-signin input[type="email"] {
+    font-size: 16px;
+    height: auto;
+    padding: 7px 9px;
+}
+
+.signin-form
+{
+	/* border:solid red 1px; */
+	margin-top:80px;
+}
+.navbar-brand{
+	font-family:"Lucida Handwriting";
+}
+#btn-submit{
+	height:45px;
+}
+
+
+
+
+
+
+
+.container1{
+    width: 55%;
+    margin: 0 auto;
+    border: 0px solid black;
+    padding: 10px 0px;
+}
+.post{
+    width: 97%;
+    min-height: 200px;
+    padding: 5px;
+    border: 1px solid gray;
+    margin-bottom: 15px;
+}
+
+.post h1{
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+
+.post p{
+    letter-spacing: 1px;
+    text-overflow: ellipsis;
+    line-height: 25px;
+}
+
+/* Load more */
+.load-more{
+    width: 99%;
+    background: #15a9ce;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+    font-family: sans-serif;
+}
+
+.load-more:hover{
+    cursor: pointer;
+}
+/* more link */
+.more{
+    /* color: blue!important; */
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+}

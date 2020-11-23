@@ -1,0 +1,83 @@
+  include_once('functions.php');
+
+    // если была произведена отправка формы
+    if(isset($_FILES['file'])) {
+      // проверяем, можно ли загружать изображение
+      $check = can_upload($_FILES['file']);
+    
+      
+      if($check === true){
+        
+        // загружаем изображение на сервер
+        make_upload($_FILES['file']);
+        $filename=$_FILES['file']['name'];
+        
+       $qimg = "UPDATE parents SET ";
+
+       $qimg .="parents_img = '".mysqli_real_escape_string($con, $filename)."' ";
+
+   
+       $qimg .="WHERE parents_id='".mysqli_real_escape_string($con, $id)."' ";
+       $queryimg = mysqli_query($con, $qimg);
+       
+      //  $querys = mysqli_query($con, "SELECT parents_img FROM parents WHERE parents_id='".$current_user."'");
+      //  $data = mysqli_fetch_assoc($querys);
+
+      //  $img = $data['parents_img'];
+       header("Refresh:0");
+        echo "<strong>Файл успешно загружен!</strong>";
+
+      }
+      else{
+        // выводим сообщение об ошибке
+        echo "<strong>$check</strong>";  
+      }
+    }
+
+	
+
+<div class="col-3">
+						<img src="images/<?=$img;?>" class="img-responsive" style=" max-height:125px !important;"
+						/>
+						<form method="post" enctype="multipart/form-data">
+							<div class="form-group">
+								<input type="file" class="form-control-file" name="file">
+                <input type="submit" class="form-control-file" value="Загрузить файл!">
+               
+							</div>
+						</form>
+
+
+
+<?php
+  function can_upload($file){
+	// если имя пустое, значит файл не выбран
+    if($file['name'] == '')
+		return 'Вы не выбрали файл.';
+	
+	/* если размер файла 0, значит его не пропустили настройки 
+	сервера из-за того, что он слишком большой */
+	if($file['size'] == 0)
+		return 'Файл слишком большой.';
+	
+	// разбиваем имя файла по точке и получаем массив
+	$getMime = explode('.', $file['name']);
+	// нас интересует последний элемент массива - расширение
+	$mime = strtolower(end($getMime));
+	// объявим массив допустимых расширений
+	$types = array('jpg', 'png', 'gif', 'bmp', 'jpeg');
+	
+	// если расширение не входит в список допустимых - return
+	if(!in_array($mime, $types))
+		return 'Недопустимый тип файла.';
+	
+	return true;
+  }
+  
+  function make_upload($file){	
+
+	$name = $file['name'];
+//	$type=$file['pic']['type'];
+	//	$size=getimagesize($name);
+	copy($file['tmp_name'], 'images/' . $name);
+  }

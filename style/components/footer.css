@@ -1,0 +1,27 @@
+.footer{
+    padding: 25px 45px 40px;
+    background-color: #333;
+    min-height: 65px;
+}
+.footer-inner{
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 25px
+}
+.footer-inner-li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-inner-items{
+    display: inline-block;
+    background-color: transparent;
+    color: #f9fafa;
+    font-weight: 400;
+    height: auto;
+    padding: 0;
+}
